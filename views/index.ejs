@@ -1,0 +1,38 @@
+<%- include("./partials/header") %>
+
+    <div class="container">
+        <header class="jumbotron">
+            <div class="container">
+                <h3>Subreddit:</h3>
+                <% if (!data) { %>
+                    <h4>Please enter the correct subreddit!</h4>
+                <% } else { %>
+                    <h4><%= data[0]["sub"] %></h4>
+                <% }; %>  
+            </div>
+            <a href="/" id="goback">Search Again</a>
+        </header>
+        <% if (data) { %>
+            <div class="row">
+            <% data.forEach(function(subreddit){ %>
+                <div class="col-lg-6 col-md-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <% if (subreddit["title"].length >= 95) { %>
+                                        <%= subreddit["title"].slice(0,94) + "..." %>
+                                    <% } else { %>
+                                        <%= subreddit["title"] %>
+                                    <% }; %>
+                                </h5>
+                                <h6 class="card-subtitle mb-2 text-muted">Author: <%= subreddit["author"] %></h6>
+                                <a href="<%= subreddit['url'] %>" target="_blank" class="card-link">See details</a>
+                            </div>
+                        </div>
+                </div>
+            <% }); %>
+            </div>
+        <% }; %>
+    </div>
+
+<%- include("./partials/footer") %>

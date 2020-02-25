@@ -1,0 +1,17 @@
+{
+  "name": "subreddit_search_app",
+  "version": "1.0.0",
+  "description": "In this app, you can search for the subreddit you want",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Chenmei Li",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  }
+}

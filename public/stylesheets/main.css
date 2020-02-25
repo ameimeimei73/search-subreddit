@@ -1,0 +1,21 @@
+.card {
+    height: 10em;
+    margin: 1em;
+}
+
+.jumbotron {
+    height: 14em;
+    margin-top: 5em;
+    color: #ffffff;
+    background-image: url(../image/bg.jpg);
+}
+
+#goback {
+    margin-left: 1em;
+    margin-top: 1.3em;
+}
+
+
+
+
+
