@@ -6,10 +6,9 @@ I used Node.js and Express.js as frameworks to create a REST API and implemented
 
 ## Set-up
 
-Firstly, run the following command:
+Firstly, when you are in the download folder, run the following command:
 
 ```
-cd subreddit
 npm install
 npm start
 ```
