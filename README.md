@@ -19,7 +19,7 @@ http://localhost:3000/
 
 ## App Workflow
 
-User can specify the subreddit name in a text input field on the home page. According to this subreddit, we used Reddit API to retrieve the relevant information.  Reddit API will return a JSON object, we extract the useful and meaningful information, then send them to the show page. The show page will display these articles. 
+User can specify the subreddit name in a text input field on the home page. According to this subreddit, I use Reddit API to retrieve the relevant information.  Reddit API will return a JSON object, I extract the useful and meaningful information, then send them to the show page. The show page will display these articles. 
 
 ## Deployed App Link
 
